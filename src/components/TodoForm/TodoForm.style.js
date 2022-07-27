@@ -2,7 +2,6 @@ import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   wrapper: {
-    display: 'flex',
     flexDirection: 'column',
     padding: 10,
     margin: 10,

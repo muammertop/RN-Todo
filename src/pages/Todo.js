@@ -1,15 +1,26 @@
 import React from 'react';
-import {View} from 'react-native';
+import {
+  Dimensions,
+  KeyboardAvoidingView,
+  StatusBar,
+  StyleSheet,
+} from 'react-native';
 import {TodoForm, TodoHeader, TodoList} from '../components';
 
 const Todo = ({state, setState}) => {
   return (
-    <View>
+    <KeyboardAvoidingView style={style.container} behavior={'padding'}>
       <TodoHeader state={state} />
       <TodoList state={state} setState={setState} />
       <TodoForm setState={setState} />
-    </View>
+    </KeyboardAvoidingView>
   );
 };
+
+const style = StyleSheet.create({
+  container: {
+    height: Dimensions.get('screen').height - StatusBar.currentHeight - 75,
+  },
+});
 
 export default Todo;

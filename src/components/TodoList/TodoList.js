@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlatList, View} from 'react-native';
+import {FlatList} from 'react-native';
 import {TodoListItem} from '../index';
 
 const TodoList = ({state, setState}) => {
@@ -8,13 +8,11 @@ const TodoList = ({state, setState}) => {
   );
 
   return (
-    <View>
-      <FlatList
-        data={state}
-        renderItem={renderItem}
-        keyExtractor={item => item.id}
-      />
-    </View>
+    <FlatList
+      data={state}
+      renderItem={renderItem}
+      keyExtractor={item => item.id}
+    />
   );
 };
 

@@ -1,11 +1,12 @@
 import React from 'react';
 import {View} from 'react-native';
-import {TodoHeader} from '../components';
+import {TodoHeader, TodoList} from '../components';
 
 const Todo = ({state, setState}) => {
   return (
     <View>
-      <TodoHeader />
+      <TodoHeader state={state} />
+      <TodoList state={state} setState={setState} />
     </View>
   );
 };

@@ -1,6 +1,6 @@
-## RN-Flatlist-Example
+## RN-Todo-Example
 
-> This project is basic example of state management.
+> This project is basic example of state management the React Native.
 
 ---------
 
